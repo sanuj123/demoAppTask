@@ -1,0 +1,12 @@
+<ionic-view view-title="Home" style="background-color: black">
+    <ion-slide-box does-continue="true" auto-play="true" pager-click="doFunc(index)">
+       <ion-slide ng-repeat="image in images" style="text-align: center;">
+           <div>
+           <img ng-src="{{image.path}}" alt="" width="500" height="637">
+           <h2 class="homeImages" style="position: absolute; top: 70%; left: 37%; color: white">{{image.caption1}}</h2>
+           <h1 class="homeImages" style="position: absolute; top: 80%; left: 44%; color: white">{{image.caption2}}</h1>
+           </div>
+       </ion-slide>
+    </ion-slide-box>
+
+</ionic-view>
